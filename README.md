@@ -27,11 +27,11 @@ Cypher is an open-source cybersecurity tool designed to detect common vulnerabil
 
 3. Install dependencies:
   
-  bash
+
   
-  Copy code
-  
-  `pip install requests colorama`
+  ```bash 
+  pip install requests colorama
+```
   
 
 ## Usage
@@ -40,7 +40,6 @@ Cypher is an open-source cybersecurity tool designed to detect common vulnerabil
   
   **Example `sites.txt`:**
   
-  Copy code
   
   `example.com testsite.net vulnerable-site.org`
   
@@ -48,11 +47,8 @@ Cypher is an open-source cybersecurity tool designed to detect common vulnerabil
   
   - Execute the script and provide the filename for the target list:
     
-    bash
-    
-    Copy code
-    
-    `python cypher.py`
+    ```bash
+    python cypher.py```
     
 3. **Check Results**: Cypher will display results in the terminal and save identified vulnerabilities in `ELITE.txt`.
   
@@ -61,11 +57,10 @@ Cypher is an open-source cybersecurity tool designed to detect common vulnerabil
 
 If Cypher detects a vulnerability, the output will look like this:
 
-less
 
-Copy code
-
-`ELITE : http://example.com/wp-content/themes/seotheme/db.php?u Successfully REDZONE : http://testsite.net/wp-content/plugins/linkpreview/db.php?u Failed`
+```bash
+ELITE : http://example.com/wp-content/themes/seotheme/db.php?u Successfully REDZONE : http://testsite.net/wp-content/plugins/linkpreview/db.php?u Failed
+```
 
 - `ELITE`: Vulnerability detected.
 - `REDZONE`: No vulnerabilities or request failed.
